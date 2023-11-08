@@ -2,3 +2,14 @@ baseURL = '/'
 languageCode = 'zn-cn'
 title = 'blog'
 theme = 'paper'
+
+
+  # giscus
+[params.giscus]
+  repo = 'iswangaiguo/my_site'                 # see https://giscus.app for more details
+  repoId = 'R_kgDOKmG-Lg'
+  category = 'Announcements'
+  categoryId = 'DIC_kwDOKmG-Ls4CawBv'
+  mapping = 'pathname'
+  theme = 'light'
+  lang = 'zh-CN'
