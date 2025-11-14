@@ -1,0 +1,28 @@
+baseurl = "/"
+title = "Blog"
+languageCode = "zh-cn"
+DefaultContentLanguage="zh-cn"
+theme="Hugo-Octopress"
+
+[menus]
+  [[menus.main]]
+    name = '首页'
+    pageRef = '/'
+    weight = 10
+  [[menus.main]]
+    name = '编程'
+    pageRef = '/categories/编程'
+    weight = 20
+  [[menus.main]]
+    name = '随笔'
+    pageRef = '/categories/随笔'
+    weight = 30
+
+[params.giscus]
+  repo = 'iswangaiguo/my_site'                 # see https://giscus.app for more details
+  repoId = 'R_kgDOKmG-Lg'
+  category = 'Announcements'
+  categoryId = 'DIC_kwDOKmG-Ls4CawBv'
+  mapping = 'pathname'
+  theme = 'light'
+  lang = 'zh-CN'
