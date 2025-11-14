@@ -14,11 +14,11 @@ curl https://get.acme.sh | sh
 
 申请域名证书需要验证域名所有权，这里域名部署在Cloudflare，直接使用[Cloudflare Token](https://dash.cloudflare.com/profile/api-tokens)验证
 
-![cloudflare令牌界面](https://pages.aiguo.buzz/1699342918815.png)
+![cloudflare令牌界面](https://objects.wangaiguo.com/2023/11/1699342918815.png)
 
 这里创建令牌，然后选择自己托管的域名就好了
 
-![申请令牌](https://pages.aiguo.buzz/1699343315236.png)
+![申请令牌](https://objects.wangaiguo.com/2023/11/1699343315236.png)
 
 保存到本地，因为cloudflare只显示一次
 
