@@ -2,6 +2,8 @@
 title: "使用acme.sh申请泛域名证书"
 date: 2023-11-07T15:40:24+08:00
 draft: flase
+categories:
+  - 编程
 ---
 
 ## 安装acme.sh
