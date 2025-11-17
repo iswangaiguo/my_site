@@ -4,6 +4,7 @@ languageCode = "zh-cn"
 DefaultContentLanguage = "zh-cn"
 theme = "Hugo-Octopress"
 
+
 [[menu.main]]
   name = '首页'
   pageRef = '/'
@@ -34,13 +35,12 @@ theme = "Hugo-Octopress"
 [permalinks]
   post = "/:year-:month-:day-:title/" # change the post URL to look like the old ones
 
+
 [params]
   # Set to true to enable compact index. Set to false or remove to go back to classic view.
   compactIndex = true
   # This text appears in the site header under website title
   subtitle = "Make it work, make it right, make it fast"
-  # used in the search engine
-  searchEngineURL = "https://www.google.com/search"
 
   sidebarMenuEnabled = true
   sidebarHeader = "About me"
@@ -54,26 +54,20 @@ theme = "Hugo-Octopress"
   Tools & Practices: [Vim/Linux/VSCode]
   """
   navigationNewWindow = false
-  sidebarRecentLimit = 5
 
+  sidebarMenuHeader = "other links"
 
-  sidebarMenuHeader = "Sidebar links!"
-
-  # if false, all of the post will appear on front page (and in pagination)
-  truncate = true
-
-  # author's name (this will appear in metadata and under posts)
-  #author = "wangaiguo"
   rss = true  # switch to true to enable RSS icon link
 
   defaultDescription = ""
 
-  # does this even work in action?
-  # defaultKeywords = ["Hugo" , "Hugo-Octopress" , "demo"]
-  tableOfContents = false
+  # generate post doc
+  tableOfContents = true
 
   # generate taxonomy list
   generateTaxonomyList = true
+
+  disableGoogleFonts = false
 
   mainSections = ["posts"]
 
