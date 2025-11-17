@@ -1,28 +1,81 @@
 baseurl = "/"
 title = "Blog"
 languageCode = "zh-cn"
-DefaultContentLanguage="zh-cn"
-theme="Hugo-Octopress"
+DefaultContentLanguage = "zh-cn"
+theme = "Hugo-Octopress"
 
-[menus]
-  [[menus.main]]
-    name = '首页'
-    pageRef = '/'
-    weight = 10
-  [[menus.main]]
-    name = '编程'
-    pageRef = '/categories/编程'
-    weight = 20
-  [[menus.main]]
-    name = '随笔'
-    pageRef = '/categories/随笔'
-    weight = 30
+[[menu.main]]
+  name = '首页'
+  pageRef = '/'
+  weight = 10
+[[menu.main]]
+  name = '编程'
+  pageRef = '/categories/编程'
+  weight = 20
+[[menu.main]]
+  name = '随笔'
+  pageRef = '/categories/随笔'
+  weight = 30
 
-[params.giscus]
-  repo = 'iswangaiguo/my_site'                 # see https://giscus.app for more details
-  repoId = 'R_kgDOKmG-Lg'
-  category = 'Announcements'
-  categoryId = 'DIC_kwDOKmG-Ls4CawBv'
-  mapping = 'pathname'
-  theme = 'light'
-  lang = 'zh-CN'
+
+[[menu.sidebar]]
+  Name = "Tags"
+  URL = "/tags/"
+  weight = 20
+[[menu.sidebar]]
+  Name = "Google"
+  URL = "https://www.google.com"
+  weight = 40
+[[menu.sidebar]]
+  Name = "Hugo"
+  URL = "/categories/hugo/"
+  weight = 50
+
+[permalinks]
+  post = "/:year-:month-:day-:title/" # change the post URL to look like the old ones
+
+[params]
+  # Set to true to enable compact index. Set to false or remove to go back to classic view.
+  compactIndex = true
+  # This text appears in the site header under website title
+  subtitle = "Make it work, make it right, make it fast"
+  # used in the search engine
+  searchEngineURL = "https://www.google.com/search"
+
+  sidebarMenuEnabled = true
+  sidebarHeader = "About me"
+
+  sidebarText = """
+  a passionate and curious Software Engineer, Full-Stack Developer with a deep interest in unraveling the complexities of technology.
+
+  Languages: [Java/JavaScript/elixir]
+  Frontend: [Vue/HTML/CSS]  
+  Backend: [Spring Boot/Phoenix/Mysql]
+  Tools & Practices: [Vim/Linux/VSCode]
+  """
+  navigationNewWindow = false
+  sidebarRecentLimit = 5
+
+
+  sidebarMenuHeader = "Sidebar links!"
+
+  # if false, all of the post will appear on front page (and in pagination)
+  truncate = true
+
+  # author's name (this will appear in metadata and under posts)
+  #author = "wangaiguo"
+  rss = true  # switch to true to enable RSS icon link
+
+  defaultDescription = ""
+
+  # does this even work in action?
+  # defaultKeywords = ["Hugo" , "Hugo-Octopress" , "demo"]
+  tableOfContents = false
+
+  # generate taxonomy list
+  generateTaxonomyList = true
+
+  mainSections = ["posts"]
+
+
+
